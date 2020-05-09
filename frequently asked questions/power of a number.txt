@@ -1,0 +1,16 @@
+#  Write a C program to find out power of a given number #
+
+
+#include <stdio.h>
+int main()
+{
+    int powe=1,num,expo,i;
+    printf("enter the number and exponent:");
+    scanf("%d%d",&num,&expo);
+    for(i=1;i<=expo;i++)
+    {
+        powe=powe*num;
+    }
+    printf("power of number %d",powe);
+    return 0;
+}

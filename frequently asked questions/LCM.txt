@@ -1,0 +1,22 @@
+#  Write a C program to find out L.C.M. of two numbers #
+
+
+#include <stdio.h>
+int main()
+{
+    int n1,n2,a,b,lcm,gcd,temp;
+    printf("enter the numbers");
+    scanf("%d%d",&n1,&n2);
+    a=n1;
+    b=n2;
+    while(n2!=0)
+    {
+        temp=n2;
+        n2=n1%n2;
+        n1=temp;
+    }
+    gcd=n1;
+    lcm=(a*b)/gcd;
+    printf("the lcm of two numbers:%d",lcm);
+    return 0;
+}	

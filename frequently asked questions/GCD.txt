@@ -1,0 +1,19 @@
+# Write a C program to find out the G.C.D of two numbers.  #
+
+
+#include <stdio.h>
+int main()
+{	
+    int n1,n2,temp,gcd;
+    printf("enter two numbers:");
+    scanf("%d%d",&n1,&n2);
+    while (n2 != 0) 
+    {
+ 	  temp = n2;
+ 	  n2 = n1 % n2;
+ 	  n1 = temp; gcd = n1;
+}
+    printf("GCD = %d", gcd);
+    return 0;
+ }
+    
